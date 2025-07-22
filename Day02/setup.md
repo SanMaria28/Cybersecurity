@@ -7,7 +7,8 @@ Link: https://www.virtualbox.org/
 
 * Click on the Download button
     
-<img src="C:\Users\sanma\OneDrive\Pictures\Screenshots\Screenshot 2025-07-21 211411.png" alt ="Visit the website">
+<img width="1919" height="965" alt="Screenshot 2025-07-21 211411" src="https://github.com/user-attachments/assets/e7f7b2d3-42f3-4ede-9864-765a523daed6" />
+
 
 After Downloading, continue with installlation process. Provide the permisssion for User Account Control.
 
