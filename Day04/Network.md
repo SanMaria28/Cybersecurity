@@ -29,3 +29,40 @@ The process of dividing one big network into multiple smaller networks is called
 
 ----
 ### IPv4 and IPv6
+IPv4 and IPv6 are two versions of the Internet Protocol, with IPv6 designed to succeed IPv4.
+|Features  |IPv4 |IPv6 |
+|----------|-------------------------------|-----------------------------------|
+|*Address Length* |	32 bits (4 numbers, e.g., 192.168.1.1) | 128 bits (8 segments, e.g., 2001:0db8:85a3::8a2e:0370:7334)|
+|*Number of Addresses*|About 4.3 billion |About 340 undecillion (3.4 × 10³⁸)|
+|*Address Notation*|Dotted decimal (e.g., 192.168.0.1)|Hexadecimal separated by colons (e.g., 2001:db8::1)|
+|*Header Size*|20–60 bytes, variable |40 bytes, fixed|
+|*Security*|No built-in security (IPSec optional)|IPSec built-in for encryption/authentication|
+|*Fragmentation*|Done by sender and routers|Only by sender|
+|*Address Classes*|Present (A, B, C, D, E)|No class concept; all addresses are considered equal|
+|*End-to-End Integrity*|Not Achievable | Achievable|
+
+#### Why IPv6?
+- IPv6 was developed to overcome the address exhaustion of IPv4, offering a vastly larger address space.
+- IPv6 addresses are harder to remember but much more future-proof, accommodating the rapid growth of internet devices.
+- IPv6 improves built-in security, header efficiency, and supports new networking features, while eliminating NAT in most scenarios.
+
+---
+### TCP and UDP
+|Features  |TCP (Transmission Control Protocol) |UDP (User Datagram Protocol) |
+|----------|-------------------------------|-----------------------------------|
+| Connection           | Connection-oriented: establishes a reliable connection before data transfer | Connectionless: sends data without establishing a connection |
+| Reliability          | Reliable: guarantees delivery, error-checking, retransmission of lost data | Unreliable: no guarantee of delivery, minimal error-checking |
+| Order of Data        | Ensures packets arrive in order                        | No guarantee of order; packets may arrive out of sequence |
+| Speed                | Slower due to connection setup, acknowledgments, and retransmissions | Faster: minimal overhead, no need for connection set-up  |
+| Error Checking       | Extensive: error detection, retransmission, acknowledgment | Basic: simple checksum, no retransmission              |
+| Overhead             | Higher (header size 20–60 bytes, more processing)     | Lower (header size 8 bytes, simple processing)           |
+| Data Flow            | Stream-based (continuous flow of data)                | Message-based (data sent as independent packets)         |
+| Use Cases            | Web browsing (HTTP/HTTPS), file transfer (FTP), email, remote administration (SSH) | Streaming (audio/video), online gaming, DNS, VoIP        |
+| Broadcasting         | Not supported                                         | Supported                                               |
+| Congestion Control   | Yes: uses flow and congestion control mechanisms      | No congestion control                                    |
+
+
+- TCP is ideal when reliable and ordered delivery is crucial (e.g., websites, file downloads, emails).
+- UDP is chosen when speed and low latency are more important than reliability (e.g., live video/audio streaming, online games, voice calls).
+
+Both protocols serve vital but different roles in modern networking. TCP prioritizes data integrity, while UDP favors efficiency and speed.
