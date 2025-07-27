@@ -50,16 +50,16 @@ IPv4 and IPv6 are two versions of the Internet Protocol, with IPv6 designed to s
 ### TCP and UDP
 |Features  |TCP (Transmission Control Protocol) |UDP (User Datagram Protocol) |
 |----------|-------------------------------|-----------------------------------|
-| Connection           | Connection-oriented: establishes a reliable connection before data transfer | Connectionless: sends data without establishing a connection |
-| Reliability          | Reliable: guarantees delivery, error-checking, retransmission of lost data | Unreliable: no guarantee of delivery, minimal error-checking |
-| Order of Data        | Ensures packets arrive in order                        | No guarantee of order; packets may arrive out of sequence |
-| Speed                | Slower due to connection setup, acknowledgments, and retransmissions | Faster: minimal overhead, no need for connection set-up  |
-| Error Checking       | Extensive: error detection, retransmission, acknowledgment | Basic: simple checksum, no retransmission              |
-| Overhead             | Higher (header size 20–60 bytes, more processing)     | Lower (header size 8 bytes, simple processing)           |
-| Data Flow            | Stream-based (continuous flow of data)                | Message-based (data sent as independent packets)         |
-| Use Cases            | Web browsing (HTTP/HTTPS), file transfer (FTP), email, remote administration (SSH) | Streaming (audio/video), online gaming, DNS, VoIP        |
-| Broadcasting         | Not supported                                         | Supported                                               |
-| Congestion Control   | Yes: uses flow and congestion control mechanisms      | No congestion control                                    |
+| *Connection*   | Connection-oriented: establishes a reliable connection before data transfer | Connectionless: sends data without establishing a connection |
+| *Reliability*| Reliable: guarantees delivery, error-checking, retransmission of lost data | Unreliable: no guarantee of delivery, minimal error-checking |
+| *Order of Data* | Ensures packets arrive in order                        | No guarantee of order; packets may arrive out of sequence |
+| *Speed*| Slower due to connection setup, acknowledgments, and retransmissions | Faster: minimal overhead, no need for connection set-up  |
+| *Error Checking*| Extensive: error detection, retransmission, acknowledgment | Basic: simple checksum, no retransmission              |
+| *Overhead*| Higher (header size 20–60 bytes, more processing)     | Lower (header size 8 bytes, simple processing)           |
+| *Data Flow*| Stream-based (continuous flow of data)                | Message-based (data sent as independent packets)         |
+| *Use Cases*| Web browsing (HTTP/HTTPS), file transfer (FTP), email, remote administration (SSH) | Streaming (audio/video), online gaming, DNS, VoIP        |
+| *Broadcasting*| Not supported| Supported|
+| *Congestion Control*   | Yes: uses flow and congestion control mechanisms| No congestion control|
 
 
 - TCP is ideal when reliable and ordered delivery is crucial (e.g., websites, file downloads, emails).
